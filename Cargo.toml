@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT"
 description = "Plan, quantize and route LLM inference on customer hardware: GGUF inspection, int4 and AWQ quantization, memory fit, offline routing."
-repository = "https://github.com/braylo-ai/fde-08-edge-inference"
+repository = "https://github.com/braylo777/fde-08-edge-inference"
 
 [lib]
 crate-type = ["rlib", "cdylib"]

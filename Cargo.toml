@@ -1,0 +1,26 @@
+[package]
+name = "fde-08-edge-inference"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Plan, quantize and route LLM inference on customer hardware: GGUF inspection, int4 and AWQ quantization, memory fit, offline routing."
+repository = "https://github.com/braylo-ai/fde-08-edge-inference"
+
+[lib]
+crate-type = ["rlib", "cdylib"]
+
+[[bin]]
+name = "fde-08-edge-inference"
+path = "src/main.rs"
+
+[dependencies]
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.154"
+sha2 = "=0.10.9"
+hmac = "=0.12.1"
+
+[profile.release]
+opt-level = "s"
+lto = true
+panic = "abort"
+codegen-units = 1

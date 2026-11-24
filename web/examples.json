@@ -123,5 +123,9 @@
         ]
       }
     }
-  ]
+  ],
+  "project": {
+    "n": 8,
+    "title": "Local Quantized Triage Node"
+  }
 }
